@@ -16,7 +16,7 @@ TEST(ExperimentTest, printTest)
   e.print(ss);
   std::string s("\t- experiment:\n"
       "\t\tnumber: 0\n"
-      "\t\tinput__data:\n"
+      "\t\tinput_data:\n"
       "\t\t\tbuffer_size: "+
       Byte_value(e.size) +
       "\n\t\tresults:\n"
