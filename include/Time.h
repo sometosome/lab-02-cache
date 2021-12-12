@@ -17,7 +17,7 @@ struct Time {
  public:
   void print(std::ostream& os);
   Check_type type;
-  std::vector<Check> exper_iments;
+  std::vector<Check> experiments;
   Time(Check_type type, std::vector<long>& sizes);
 };
 
