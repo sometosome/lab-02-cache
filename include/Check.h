@@ -1,4 +1,4 @@
-//Copyright by C++_developers1488
+//Copyright by sometosome
 
 #ifndef INCLUDE_CHECK_HPP_
 #define INCLUDE_CHECK_HPP_
@@ -18,8 +18,8 @@ enum Check_type {
   _random,
   _forward,
    };
-std::string to_string(Check_type type);
 
+std::string to_string(Check_type type);
 
 class Check {
  public:

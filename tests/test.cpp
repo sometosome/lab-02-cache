@@ -1,4 +1,4 @@
-//Copyright by C++_developers1488
+//Copyright by sometosome
 
 #ifndef TEST_CPP_
 #define TEST_CPP_
@@ -16,7 +16,7 @@ TEST(ExperimentTest, printTest)
   e.print(ss);
   std::string s("\t- experiment:\n"
       "\t\tnumber: 0\n"
-      "\t\tinput_data:\n"
+      "\t\tinput__data:\n"
       "\t\t\tbuffer_size: "+
       Byte_value(e.size) +
       "\n\t\tresults:\n"
