@@ -5,4 +5,5 @@
 
 auto example() -> void;
 
+
 #endif // INCLUDE_EXAMPLE_HPP_
