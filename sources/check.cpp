@@ -24,7 +24,7 @@ Check::Check(int i, Check_type t, int64_t s)
 }
 
 
-double Check::run() {
+int Check::run() {
   using std::chrono::duration;
   using std::chrono::milliseconds;
   char k = 0;

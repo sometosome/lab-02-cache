@@ -9,9 +9,7 @@
 #include <string>
 
 
-std::string Byte_value(long value);
-
-using namespace std;
+std::string Byte_value(int64_t  value);
 
 enum Check_type {
   _reverse,
@@ -29,11 +27,11 @@ class Check {
     Check_type type;
     Check(int id, Check_type type, long size);
     char* initArray();
-    double run();
+    int run();
     void _random(char* arr, char& k);
     void _forward(char* arr, char& k);
     void _reverse(char* arr, char& k);
     void print(std::ostream& os);
 };
 
-#endif // INCKUDE_CHECK_HPP_
+#endif // INCLUDE_CHECK_HPP_

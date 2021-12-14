@@ -1,7 +1,7 @@
 //Copyright by sometosome
 
-#ifndef INCLUDE_TIME_HPP_
-#define INCLUDE_TIME_HPP_
+#ifndef INCLUDE__TIME_HPP_
+#define INCLUDE__TIME_HPP_
 
 #include <iostream>
 #include <random>
@@ -22,4 +22,4 @@ struct Time {
 };
 
 
-#endif // INCLUDE_TIME_HPP_
+#endif // INCLUDE__TIME_HPP_
