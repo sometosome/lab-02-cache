@@ -9,10 +9,6 @@
 
 #include "check.hpp"
 
-using std::string;
-
-using std::vector;
-
 struct Time {
  public:
   void print(std::ostream& os);

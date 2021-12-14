@@ -22,10 +22,10 @@ std::string to_string(Check_type type);
 class Check {
  public:
     int id;
-    long size;
+    int size;
     int time;
     Check_type type;
-    Check(int id, Check_type type, long size);
+    Check(int id, Check_type type, int size);
     char* initArray();
     int run();
     void _random(char* arr, char& k);
