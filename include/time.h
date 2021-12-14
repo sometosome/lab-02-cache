@@ -7,18 +7,18 @@
 #include <random>
 #include <vector>
 
-#include "Check.h"
+#include "check.h"
 
 using std::string;
 
 using std::vector;
 
-struct Time {
+struct time {
  public:
   void print(std::ostream& os);
   Check_type type;
   std::vector<Check> experiments;
-  Time(Check_type type, std::vector<long>& sizes);
+  time(Check_type type, std::vector<long>& sizes);
 };
 
 

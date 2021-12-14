@@ -1,6 +1,6 @@
 //Copyright by sometosome
 
-#include "Check.h"
+#include "check.h"
 #include <sstream>
 
 std::ostream & operator<<(std::ostream & os, Check_type const & type) {

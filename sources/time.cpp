@@ -1,9 +1,9 @@
 //Copyright by sometosome
 
-#include "Time.h"
+#include "time.h"
 
-Time::Time(Check_type t, std::vector<int64_t>& sizes) {
-  Time::type = t;
+time::time(Check_type t, std::vector<int64_t>& sizes) {
+  time::type = t;
   int id = 0;
   for (int64_t i=log2(sizes[0]/2); pow(2, i) < 3*sizes[sizes.size()-1]/2; i++)
   {
@@ -13,7 +13,7 @@ Time::Time(Check_type t, std::vector<int64_t>& sizes) {
     experiments.push_back(e);
   }
 }
-void Time::print(std::ostream& os) {
+void time::print(std::ostream& os) {
   os<< "investigation\n\ttravel_variant: " << to_string(type) << std::endl;
   for (Check& experiment : experiments)
   {
