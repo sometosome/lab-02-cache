@@ -39,7 +39,7 @@ TEST(ExperimentTest, forwardTest) {
 }
 TEST(ExperimentTest, reverseTest) {
   try {
-    Check e(0, _random, 80);
+    Check e(0, _forward, 80);
     char* arr = e.initArray();
     char k=0;
     e._forward(arr, k);
@@ -53,7 +53,7 @@ TEST(ExperimentTest, reverseTest) {
 }
 TEST(ExperimentTest, randomTest) {
   try {
-    Check e(0, _random,  80);
+    Check e(0, _reverse,  80);
     char* arr = e.initArray();
     char k;
     e._reverse(arr, k);
