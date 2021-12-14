@@ -16,7 +16,7 @@ char* Check::initArray()
   return arr;
 }
 
-Check::Check(int i, Check_type t, int64_t s)
+Check::Check(int i, Check_type t, int s)
 {
   Check::id = i;
   Check::type = t;
