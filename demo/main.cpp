@@ -1,7 +1,7 @@
 //Copyright by C++_developers1488
 
-#include "check.h"
-#include "time.h"
+#include "check.hpp"
+#include "_time.hpp"
 
 int main() {
   std::vector <int64_t> size;
@@ -13,6 +13,6 @@ int main() {
     if(i>0 and i != 0)
       size.push_back(i);
   }
-  time inv(_reverse, size);
+  Time inv(_reverse, size);
   inv.print(std::cout);
 }

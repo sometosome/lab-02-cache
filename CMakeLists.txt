@@ -32,11 +32,11 @@ find_package(GTest CONFIG REQUIRED)
 add_library(${PROJECT_NAME} STATIC
   # enum your files and delete this comment
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/Byte_value.cpp
-        sources/time.cpp include/time.h sources/check.cpp include/check.h sources/Check_type.cpp)
+        sources/_time.cpp include/_time.hpp sources/check.cpp include/check.hpp sources/Check_type.cpp)
 
 add_executable(demo
   ${CMAKE_CURRENT_SOURCE_DIR}/demo/main.cpp
-        sources/time.cpp include/time.h sources/check.cpp include/check.h sources/check.cpp include/check.h sources/Check_type.cpp)
+        sources/_time.cpp include/_time.hpp sources/check.cpp include/check.hpp sources/check.cpp include/check.hpp sources/Check_type.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC
   "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
@@ -49,7 +49,7 @@ if(BUILD_TESTS)
   add_executable(tests
     # TODO: enum your files and delete this comment
     ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
-          sources/time.cpp include/time.h sources/check.cpp include/check.h sources/Check_type.cpp)
+          sources/_time.cpp include/_time.hpp sources/check.cpp include/check.hpp sources/Check_type.cpp)
   target_link_libraries(tests ${PROJECT_NAME} GTest::gtest_main)
   enable_testing()
   add_test(NAME unit_tests COMMAND tests)

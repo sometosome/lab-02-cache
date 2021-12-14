@@ -4,8 +4,8 @@
 #define TEST_CPP_
 
 #include <gtest/gtest.h>
-#include "check.h"
-#include "time.h"
+#include "check.hpp"
+#include "_time.hpp"
 
 TEST(ExperimentTest, printTest)
 {
@@ -72,7 +72,7 @@ TEST(ExperimentTest, runTest)
     int result = e.run();
     if(result >= 0)
       SUCCEED() << result;
-    else FAIL() << "time is " << result;
+    else FAIL() << "Time is " << result;
   }
   catch (std::runtime_error const & e)
   {
@@ -83,7 +83,7 @@ TEST(ExperimentTest, runTest)
 TEST(InvestigationTest, constructorTest) {
   try {
     std::vector<long> size = {838860, 1677721, 3355443};
-    time i(_reverse, size);
+    Time i(_reverse, size);
     SUCCEED();
   }
   catch (std::runtime_error const & e)

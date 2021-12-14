@@ -1,6 +1,6 @@
 //Copyright by sometosome
 
-#include "check.h"
+#include "check.hpp"
 #include <chrono>
 #include <random>
 #include <sstream>
